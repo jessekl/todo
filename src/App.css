@@ -1,5 +1,6 @@
 #container{
   padding: 16px;
+  background-color: #f9f9f9;
 }
 
 li {
@@ -8,4 +9,8 @@ li {
 
 .delete-button {
   margin-left: 16px;
+}
+
+body {
+  background-color: #333;
 }
