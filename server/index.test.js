@@ -101,7 +101,7 @@ describe('DELETE task', () => {
             }
         })
         const data = await response.json()
-        expect(response.status).to.equal(403,data.error)
+        expect(response.status).to.equal(400,data.error)
         expect(data).to.be.an('object')
         expect(data).to.include.all.keys('error')
     })

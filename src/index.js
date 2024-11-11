@@ -6,6 +6,7 @@ import ErrorPage from './screens/ErrorPage';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute'
 import UserProvider from './context/UserProvider'
+import './index.css'
 
 const router = createBrowserRouter([
   {

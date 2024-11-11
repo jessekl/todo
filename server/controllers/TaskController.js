@@ -28,8 +28,8 @@ const deleteTask = async(req,res,next) => {
     try{
         const id = parseInt(req.params.id)
         if (isNaN(id)){
-            const error = new Error('Forbidden id')
-            error.statusCode = 403
+            const error = new Error('Invalid task id')
+            error.statusCode = 400
             return next(error)
         }
         const result = await removeTask(id)
